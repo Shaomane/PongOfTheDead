@@ -23,7 +23,6 @@ public class PlayerControls : MonoBehaviour
         if (rb2d == null)
             Debug.LogWarning("Rigidbody not attached to player " + gameObject.name);
 
-        Debug.Log("Started PlayerControls Update");
         var vel = rb2d.velocity;
         if (Input.GetKey(moveUp)) {
             Debug.Log("moveUp");
